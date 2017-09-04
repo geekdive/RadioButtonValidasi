@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="id.co.decoded.moeslim.radiobuttonvalidasi.homeActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Standard Delivery" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Midnight Delivery"
+            android:textSize="12dp"
+            android:id="@+id/rbMidnight" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cek Validasi"/>
+
+        <Button
+            android:id="@+id/btnUncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Uncheck All"/>
+
+        <Button
+            android:id="@+id/btnKirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kirim"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:id="@+id/txtTampung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reuslt: "/>
+
+</LinearLayout>
